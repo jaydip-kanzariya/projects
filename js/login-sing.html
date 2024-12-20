@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bt
+        {
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+        }
+        .bt button
+        {
+            background-color: orangered;
+        }
+
+        .p2
+        {
+            background-color: rgb(4, 4, 4);
+            display: flex;
+            justify-content: center;
+        }
+        .login
+        {
+            text-align: center;
+            background-color: blue;
+            display: none;
+            width: 500px;
+
+        }
+       
+
+        .sing-up
+      {
+
+        background-color: brown;
+        text-align: center;
+        display: none;
+        width: 500px;
+      }
+
+      input
+      {
+        margin-top: 10px;
+      }
+      label
+      {
+        color: aliceblue;
+      }
+    </style>
+</head>
+
+<body>
+    
+
+     <div class="bt"> 
+
+        <button onclick="b1()">login </button>
+        <button onclick="sing11()">sing up</button>
+     </div>
+
+     
+     <div class="p2">
+
+
+            <div class="login"  id="login" >
+                  
+                <h1>login </h1>
+
+                <form action="">
+           
+                      <label for="">NEME</label> <br>
+                      <input type="text"> <br>
+
+                      <label for="">password</label> <br>
+                      <input type="password"> <br>
+
+                    
+
+
+                      <input type="submit">
+                     
+                </form>
+
+            </div>
+
+      <div class="sing-up" id="sing-up">
+                  
+          <h1>sing-up</h1>
+                <form action="">
+           
+                    <label for="">NEME</label> <br>
+                    <input type="text"> <br>
+
+                    <label for="">password</label> <br>
+                    <input type="password"> <br>
+
+
+                    <label for="">con-password</label> <br>
+                    <input type="text"> <br>
+
+         
+
+
+                    <input type="submit">
+                   
+                    
+              </form>
+
+
+
+            </div>
+
+
+
+
+     </div>
+
+
+
+
+    <script>
+
+          
+         
+           
+
+          console.log(p1,s1)
+     
+         
+          function b1()
+          {
+            document.getElementById("login").style.display = "block";
+            document.getElementById("sing-up").style.display = "none";
+     
+          }
+
+          
+          function sing11()
+          {
+           
+            document.getElementById("login").style.display = "none";
+            document.getElementById("sing-up").style.display = "block";
+     
+
+         }
+    </script>
+
+</body>
+</html>
+
+
+
+

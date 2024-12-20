@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+
+     <video src="demo.mp4" width="400px" id="video"></video>
+
+
+     <button>play</button>
+     
+
+
+
+
+
+       <script>  
+
+         vd = document.getElementById("video")
+         bt= document.querySelector("button")
+
+
+
+
+         bt.addEventListener('click', () => {
+          if (vd.paused) {
+            vd.play(); 
+            bt.innerHTML = 'Pause';
+          } else {
+            vd.pause(); 
+            bt.innerHTML = 'Play';
+          }
+        });
+    
+
+
+       </script>
+</body>
+</html>

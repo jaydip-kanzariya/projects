@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      width: 50%;
+      text-align: center;
+      margin: auto;
+      padding: 20px 0;
+
+    }
+
+    input {
+      width: 300px;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    button {
+      padding: 20px 60px;
+      background-color: orangered;
+      border-radius: 15px;
+      font-weight: bold;
+    }
+
+    ul {
+      background-color: rgb(166, 162, 162);
+      margin-top: 20px;
+
+    }
+
+    li {
+      border-bottom: 1px solid rgb(71, 66, 66);
+      padding: 10px;
+      list-style: none;
+      text-align: left;
+      color: rgb(42, 76, 180);
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div>
+    <input type="text">
+
+    <button onclick="clicka()">add</button>
+
+    <ul>
+
+      <li>hellow </li>
+      <li>ravi</li>
+
+    </ul>
+  </div>
+  <script>
+
+    inp = document.querySelector('input')
+
+    ntn = document.querySelector('button')
+
+    ul = document.querySelector('ul')
+
+
+    function clicka() {
+
+
+      li = document.createElement("li")
+      li.innerHTML = inp.value
+      ul.appendChild(li)
+
+
+    }
+
+
+  </script>
+
+</body>
+
+</html>
